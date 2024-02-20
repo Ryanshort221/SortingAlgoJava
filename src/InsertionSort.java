@@ -15,6 +15,6 @@ public class InsertionSort {
             }
             n[j + 1] = key; 
         }
-        System.out.println(Arrays.toString(n));
+        System.out.println(Arrays.toString(n) + "insertion sort");
     }
 } 
