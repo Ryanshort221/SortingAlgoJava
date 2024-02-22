@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class InsertionSort {
     public int[] n;
 
-    public void sort(int[] n) {
+    public void insertionSort(int[] n) {
         int n1 = n.length;
         for (int i = 1; i < n1 ; i++) {
             int key = n[i];
