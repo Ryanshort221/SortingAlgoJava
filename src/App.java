@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Random;
 public class App {
     public static void main(String[] args) throws Exception {
         // int[] arr = { 5, 4, 3, 2, 1 };
@@ -21,12 +23,25 @@ public class App {
         // selectionSort1.sort(arr1);
         // SelectionSort selectionSort2 = new SelectionSort();
         // selectionSort2.sort(arr2);
-        Dijkstra dijkstra = new Dijkstra();
-        int[][] testMatrix = { { 0, 3, 0, 0 }, { 3, 0, 4, 0 }, { 0, 4, 0, 5 }, { 0, 0, 5, 0 } };
-        dijkstra.dijkstra(testMatrix);
-        int targetNode = 3;
-        int[] distances = dijkstra.dijkstra(testMatrix);
+        // Dijkstra dijkstra = new Dijkstra();
+        // int[][] testMatrix = { { 0, 3, 0, 0 }, { 3, 0, 4, 0 }, { 0, 4, 0, 5 }, { 0, 0, 5, 0 } };
+        // dijkstra.dijkstra(testMatrix);
+        // int targetNode = 3;
+        // int[] distances = dijkstra.dijkstra(testMatrix);
 
-        System.out.println("The shortest distance from node 0 to node " + targetNode + " is " + distances[targetNode]);
+        // System.out.println("The shortest distance from node 0 to node " + targetNode + " is " + distances[targetNode]);
+
+
+        Random rand = new Random();
+        int[] arr = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = rand.nextInt(100);
+        }
+        QuickSort quicksort = new QuickSort();
+        quicksort.quicksort(arr);
+        System.out.println("Quick Sort " + Arrays.toString(arr));
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort(arr);
+        System.out.println("Merge Sort " + Arrays.toString(arr));
     }
 }
