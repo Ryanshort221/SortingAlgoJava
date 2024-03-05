@@ -6,7 +6,6 @@ public class QuickSort {
     // each level requires n operations
     // space complexity: O(log n) - additional space for the recursive calls
 
-
     public void quicksort(int[] array, int lowIndex, int highIndex) {
         int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
         int pivot = array[pivotIndex];

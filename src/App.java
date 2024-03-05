@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Random;
 public class App {
@@ -30,18 +32,22 @@ public class App {
         // int[] distances = dijkstra.dijkstra(testMatrix);
 
         // System.out.println("The shortest distance from node 0 to node " + targetNode + " is " + distances[targetNode]);
-
-
         Random rand = new Random();
-        int[] arr = new int[10];
+        int[] arr = new int[1000];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = rand.nextInt(100);
+            arr[i] = rand.nextInt(1000);
         }
-        QuickSort quicksort = new QuickSort();
-        quicksort.quicksort(arr);
-        System.out.println("Quick Sort " + Arrays.toString(arr));
+        long start = System.currentTimeMillis();
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(arr);
         System.out.println("Merge Sort " + Arrays.toString(arr));
+        // QuickSort quicksort = new QuickSort();
+        // bubbleSort.sort(arr);
+        // System.out.println("Bubble Sort " + Arrays.toString(arr));
+        // quicksort.quicksort(arr);
+        // System.out.println("Quick Sort " + Arrays.toString(arr)); 
+        long end = System.currentTimeMillis();
+        NumberFormat formatter = new DecimalFormat("#0.00000");
+        System.out.print("Execution time is " + formatter.format((end - start) / 1000d) + " seconds");
     }
 }

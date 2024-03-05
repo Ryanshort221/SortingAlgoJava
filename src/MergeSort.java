@@ -2,7 +2,8 @@ public class MergeSort {
     int[] array;
 
     // merge sort - recursively divide the array into two halves and merge them
-    // runtime complexity: O(n log n) - the array is divided into log n levels and each level requires n operations
+    // runtime complexity: O(n log n) - the array is divided into log n levels and
+    // each level requires n operations
     // space complexity: O(n) - additional space for the temporary arrays
 
     public void mergeSort(int[] array) {

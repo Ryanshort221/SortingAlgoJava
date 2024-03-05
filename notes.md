@@ -11,3 +11,7 @@ Quick Sort - is an efficient sorting algorithm. Developed by British computer sc
 Heap Sort - is a comparison-based sorting algorithm. Heap sort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it interactively shrinks the unsorted region by extracting the largest element and moving that to the sorted region.
 
 Bucket Sort - is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.
+
+linear search
+breadth first search
+depth first search
